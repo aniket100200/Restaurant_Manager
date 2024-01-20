@@ -220,14 +220,27 @@ ol a {
 
 @keyframes loading {
     from {
-        transform: scale(1)
+        transform: rotate(0deg)
     }
 
     from {
-        transform: scale(2)
+        transform: rotate(360deg)
     }
 
 }
+
+@keyframes handPointer {
+    from {
+        transform: scale(1);
+    }
+
+    from {
+        transform:scale(2);
+    }
+
+}
+
+
 
 
 .add:hover {
@@ -242,7 +255,7 @@ ol a {
 }
 
 .hand {
-    animation: loading 1s ease-in-out infinite;
+    animation: handPointer 1s ease-out infinite;
 }
 
 .active{
