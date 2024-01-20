@@ -118,9 +118,22 @@ const menu = document.querySelector(".menu");
 function thankyouFnc(obj) {
     alert("Thankyou for eating with us today!")
 }
+let hemro= document.querySelector(".hero");
+
+function toggleHero()
+{   
+   if(hemro.style.display=="none"){
+    hemro.style.display="flex";
+   }
+   else hemro.style.display="none";
+}
+
+function showHero(){
+    hemro.style.display="flex";
+}
 
 menu.addEventListener('click', (e) => {
-    document.querySelector(".hero").style.display = "none";
+    toggleHero();
     document.querySelector(".hand").style.display = "none";
     isMenu = true;
     takeOrder()
@@ -140,15 +153,7 @@ menu.addEventListener('click', (e) => {
             console.log(err);
         })
 
-
-
-
 })
-//this 
 
-
-setTimeout(() => {
-    if (!isMenu) alert("To see the Menu Page Please Click on the Menu");
-}, 2000);
 
 

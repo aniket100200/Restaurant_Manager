@@ -244,3 +244,9 @@ ol a {
 .hand {
     animation: loading 1s ease-in-out infinite;
 }
+
+.active{
+    background-color: rgb(132, 132, 202);
+    padding: 0 10px;
+    color: black;
+}
